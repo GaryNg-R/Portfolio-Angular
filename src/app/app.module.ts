@@ -6,6 +6,7 @@ import { HomeComponent } from './componetns/home/home.component';
 import { AboutComponent } from './componetns/about/about.component';
 import { ContactComponent } from './componetns/contact/contact.component';
 import { ResumeComponent } from './componetns/resume/resume.component';
+import { HearderComponent } from './componetns/hearder/hearder.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ResumeComponent } from './componetns/resume/resume.component';
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    ResumeComponent
+    ResumeComponent,
+    HearderComponent
   ],
   imports: [
     BrowserModule
