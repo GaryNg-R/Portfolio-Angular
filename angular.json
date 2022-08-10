@@ -33,7 +33,7 @@
               "src/css/media-queries.css"
             ],
             "scripts": [
-              "src/js/jquery-1.10.2.min.js",
+              "./node_modules/jquery/dist/jquery.min.js",
               "src/js/init.js"
             ]
           },

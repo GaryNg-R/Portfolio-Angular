@@ -7,6 +7,7 @@ import { AboutComponent } from './componetns/about/about.component';
 import { ContactComponent } from './componetns/contact/contact.component';
 import { ResumeComponent } from './componetns/resume/resume.component';
 import { HearderComponent } from './componetns/hearder/hearder.component';
+import * as $ from 'jquery';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,10 @@ import { HearderComponent } from './componetns/hearder/hearder.component';
     AboutComponent,
     ContactComponent,
     ResumeComponent,
-    HearderComponent
+    HearderComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
