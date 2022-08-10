@@ -27,9 +27,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/css/layout.css",
+              "src/css/default.css",
+              "src/css/magnific-popup.css",
+              "src/css/media-queries.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/jquery-1.10.2.min.js",
+              "src/js/init.js"
+            ]
           },
           "configurations": {
             "production": {
