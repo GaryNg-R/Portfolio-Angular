@@ -34,7 +34,7 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
-              "src/js/init.js"
+              "src/assets/js/init.js"
             ]
           },
           "configurations": {
