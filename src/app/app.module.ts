@@ -7,6 +7,7 @@ import { AboutComponent } from './componetns/about/about.component';
 import { ContactComponent } from './componetns/contact/contact.component';
 import { ResumeComponent } from './componetns/resume/resume.component';
 import { HearderComponent } from './componetns/hearder/hearder.component';
+import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
 
 @NgModule({
@@ -18,7 +19,7 @@ import * as $ from 'jquery';
     ResumeComponent,
     HearderComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
