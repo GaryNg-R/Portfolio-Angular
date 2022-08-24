@@ -30,4 +30,29 @@ export interface Soical {
 
 export interface ResumeContent {
   skillmessage: string;
+  education: Education;
+  work: Work[];
+  skills: SKill[];
+}
+
+export interface Education {
+  school: string;
+  degree: string;
+  graduated: string;
+}
+
+export interface Work {
+  company: string;
+  title: string;
+  years: string;
+  work: WorkDescription[];
+}
+
+export interface WorkDescription {
+  description: string;
+}
+
+export interface SKill {
+  name: string;
+  level: string;
 }

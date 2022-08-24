@@ -29,13 +29,13 @@
   },
   "resume":{
     "skillmessage":"Self-motivated problem solving software developer. Experience in developing full stack applications. Skilled in developing & debugging cloud applications(AWS)",
-    "education":[
+    "education":
       {
         "school":"Queens College",
         "degree":"Bachelor's degree, Computer Science",
         "graduated":"December 2015"
       }
-    ],
+    ,
     "work":[
       {
         "company":"TEKsystems@Ford Motor",
