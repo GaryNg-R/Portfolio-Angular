@@ -11,7 +11,7 @@ export interface MainContent {
   bio: string;
   contactMessage: string;
   email: string;
-  adddress: Address;
+  address: { [key: string]: string };
   website: string;
   resumedownload: string;
   social: Soical[];
