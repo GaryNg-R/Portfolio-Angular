@@ -10,7 +10,7 @@ import { ResumeApiService } from 'src/app/services/resume-api.service';
   styleUrls: ['./hearder.component.css'],
 })
 export class HearderComponent implements OnInit {
-  resume: Test;
+  resume: Resume;
 
   constructor(private resumeApiService: ResumeApiService) {}
   ngOnInit(): void {
@@ -20,7 +20,7 @@ export class HearderComponent implements OnInit {
   private loadData() {
     this.resumeApiService.getResume().subscribe((data) => {
       this.resume = data;
-      console.log(data.name);
+      console.log(this.resume.main.name);
     });
   }
 }
