@@ -11,7 +11,7 @@ export interface MainContent {
   bio: string;
   contactMessage: string;
   email: string;
-  adddress: Address;
+  address: { [key: string]: string };
   website: string;
   resumedownload: string;
   social: Soical[];
@@ -30,4 +30,29 @@ export interface Soical {
 
 export interface ResumeContent {
   skillmessage: string;
+  education: Education;
+  work: Work[];
+  skills: SKill[];
+}
+
+export interface Education {
+  school: string;
+  degree: string;
+  graduated: string;
+}
+
+export interface Work {
+  company: string;
+  title: string;
+  years: string;
+  work: WorkDescription[];
+}
+
+export interface WorkDescription {
+  description: string;
+}
+
+export interface SKill {
+  name: string;
+  level: string;
 }

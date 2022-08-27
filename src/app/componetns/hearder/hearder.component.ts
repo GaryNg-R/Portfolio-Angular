@@ -1,4 +1,6 @@
+import { Test } from './../../model/test';
 import { Component, OnInit } from '@angular/core';
+import { Resume } from 'src/app/model/resume';
 import { ResumeApiService } from 'src/app/services/resume-api.service';
 
 @Component({
@@ -7,11 +9,17 @@ import { ResumeApiService } from 'src/app/services/resume-api.service';
   styleUrls: ['./hearder.component.css'],
 })
 export class HearderComponent implements OnInit {
-  constructor(private resumeApiService: ResumeApiService) {
-    this.resumeApiService.getResume().subscribe((data) => {
-      console.log(data);
-    });
+  resume: Resume;
+
+  constructor(private resumeApiService: ResumeApiService) {}
+  ngOnInit(): void {
+    this.loadData();
   }
 
-  ngOnInit(): void {}
+  private loadData() {
+    this.resumeApiService.getResume().subscribe((data) => {
+      this.resume = data;
+      console.log(this.resume.main.address);
+    });
+  }
 }
