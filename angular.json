@@ -33,7 +33,11 @@
               "src/css/media-queries.css"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/jquery-1.10.2.min.js",
+              "src/assets/js/jquery-migrate-1.2.1.min.js",
+              "src/assets/js/waypoints.js",
+              "src/assets/js/jquery.fittext.js",
+              "src/assets/js/modernizr.js",
               "src/assets/js/init.js"
             ]
           },
