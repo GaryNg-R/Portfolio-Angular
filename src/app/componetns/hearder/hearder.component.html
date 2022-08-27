@@ -1,4 +1,4 @@
-<header id="home">
+<header id="home" *ngIf="resume">
     <nav id="nav-wrap">
 
         <a [className]="'mobile-btn'" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -14,10 +14,8 @@
 
     <div [className]="'row banner'">
         <div [className]="'banner-text'">
-            <h1 [className]="'responsive-headline'">I'm Gary.</h1>
-            <h3>I'm a Indianapolis/Remote based Full Stack Engineer with over 5 years of experience who loves
-                building
-                things and solving problems. My expertise is building backend services with REST or Lambda..</h3>
+            <h1 [className]="'responsive-headline'">I'm {{resume.main.name}}</h1>
+            <h3>{{resume.main.description}}</h3>
             <hr />
             <ul [className]="'social'">
 
@@ -30,6 +28,6 @@
 
 </header>
 
-<app-about></app-about>
-<app-resume></app-resume>
-<app-contact></app-contact>
+<app-about [resume]="resume"></app-about>
+<app-resume [resume]="resume"></app-resume>
+<app-contact [resume]="resume"></app-contact>
