@@ -20,6 +20,7 @@ export class HearderComponent implements OnInit {
     this.resumeApiService.getResume().subscribe((data) => {
       this.resume = data;
       console.log(this.resume.main.address);
+      console.log(this.resume.main.address['city']);
     });
   }
 }
