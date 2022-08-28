@@ -17,7 +17,7 @@ export class ResumeApiService {
     return this.http.get<Resume>(this.resumeJson);
   }
 
-  getMock(): Observable<Test> {
-    return this.http.get<Test>(this.resumeJson);
-  }
+  // getMock(): Observable<Test> {
+  //   return this.http.get<Test>(this.resumeJson);
+  // }
 }
