@@ -8,7 +8,15 @@
 
         <div [className]="'nine columns main-col'">
             <div [className]="'row item'">
-                <div [className]="'twelve columns'">education</div>
+                <div [className]="'twelve columns'">
+                    <div>
+                        <h3>{{resume.resume.education['school']}}</h3>
+                        <p className="info">
+                            {{resume.resume.education['degree']}} <span>&bull;</span>
+                            <em className="date">{{resume.resume.education['graduated']}}</em>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
