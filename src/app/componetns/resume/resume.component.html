@@ -28,7 +28,26 @@
             </h1>
         </div>
 
-        <div [className]="'nine columns main-col'">work</div>
+        <div [className]="'nine columns main-col'">
+
+            <div *ngFor="let work of resume.resume.work">
+                <h3>{{work['company']}}</h3>
+                <p className="info">
+                    {{work['title']}}
+                    <span>&bull;</span> <em className="date">{{work['years']}}</em>
+                </p>
+                <p> description</p>
+            </div>
+            <!-- <div>
+                <h3>{{resume.resume.work[0]['company']}}</h3>
+                <p className="info">
+                    {{resume.resume.work[0]['title']}}
+                    <span>&bull;</span> <em className="date">{{resume.resume.work[0]['years']}}</em>
+                </p>
+                <p> description</p>
+            
+            </div> -->
+        </div>
     </div>
 
     <div [className]="'row skill'">
