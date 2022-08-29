@@ -19,8 +19,9 @@ export class HearderComponent implements OnInit {
   private loadData() {
     this.resumeApiService.getResume().subscribe((data) => {
       this.resume = data;
-      console.log(this.resume.main.address);
-      console.log(this.resume.main.address['city']);
+      // console.log(this.resume.main.address);
+      // console.log(this.resume.main.address['city']);
+      // console.log(this.resume.resume.work[0].descriptions);
     });
   }
 }
