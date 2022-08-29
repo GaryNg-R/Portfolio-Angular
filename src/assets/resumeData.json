@@ -8,9 +8,9 @@
     "contactmessage":"Feel free to leave me a message.",
     "email": "siuhungng01@gmail.com",
     "address":{
-      "city":"Indianapolis",
+      "city":"Carmel",
       "state":"Indiana",
-      "zip": "46250"
+      "zip": "46032"
     },
     "website": "http://www..com",
     "resumedownload":"http://.com",
@@ -42,26 +42,36 @@
         "title":"Software Engineer",
         "years":"Feb 2022 - Present",
         "descriptions": [
-          {"description": "aaa"},
-          {"description": "vvv"}
+          {"description": "Designing & developing a highly scalable dealer web application with Spring Boot and Angular"},
+          {"description": "Strong understanding of common API technologies, such as OAUTH, Spring Boot and Microservices"},
+          {"description": "Contributed to the DevOps to automate the build and deployment process using Jenkins, Tekton, shell scripting"},
+          {"description" : "Used Angular as framework to create a Single Page application which can bin data to specific views and synchronize data with server"},
+          {"description": "Involved in the design and development phase of Agile Software Development"}
         ]
        },
        {
-        "company":"TEKsystems@Ford Motor",
-        "title":"Software Engineer",
-        "years":"Feb 2022 - Present",
+        "company":"Randstad USA @ Optum",
+        "title":"Senior Software Engineer",
+        "years":"Jul 2021 - Feb 2022",
         "descriptions": [
-          {"description": "aaa"},
-          {"description": "vvv"}
+          {"description": "Created and maintained clear, concise project plans and developed strategies to meet deadlines"},
+          {"description": "Develop design documents, user guides, maintenance documents, project documentation, and release documents"},
+          {"description": "Write efficient, maintainable and reusable code prioritizing privacy and security "},
+          {"description": "Write JSP and Servlets to add functionality to web application based on customer requirements"}
         ]
        },
        {
-        "company":"TEKsystems@Ford Motor",
-        "title":"Software Engineer",
-        "years":"Feb 2022 - Present",
+        "company":"Sallie Mae",
+        "title":"Software Engineer II",
+        "years":"Oct 2017 - Jul 2021",
         "descriptions": [
-          {"description": "aaa"},
-          {"description": "vvv"}
+          {"description": "Modernize legacy system to AWS services, reducing operating costs and improving functionality"},
+          {"description": "Completed full redesigns of existing websites with ClojureScript"},
+          {"description": "Wrote efficient, maintainable and reusable code prioritizing privacy and security"},
+          {"description": "Worked with team members to design and develop robust solutions to meet client requirements"},
+          {"description": "Monitored and tested application performance to identify potential bottlenecks, develop solutions"},
+          {"description": "Built and deployed CI/CD pipelines on MS Azure with automation test"},
+          {"description": "Attended Community of Practice meetings and training seminars every two weeks"}
         ]
        }
     ],

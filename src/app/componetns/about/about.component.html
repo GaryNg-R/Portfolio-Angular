@@ -7,16 +7,18 @@
             <h2>About Me</h2>
 
 
-            <p>bio</p>
+            <p>{{resume.main.bio}}</p>
             <div [className]="'row'">
                 <div [className]="'columns contact-details'">
                     <h2>Contact Details</h2>
                     <p [className]="'address'">
-                        <span>Name</span>
+                        <span>{{resume.main.name}}</span>
                         <br />
-                        Address
+                        {{resume.main.address['city']}}
+                        {{resume.main.address['state']}}
+                        {{resume.main.address['zip']}}
                         <br />
-                        <span>email</span>
+                        <span>{{resume.main.email}}</span>
                     </p>
                 </div>
                 <div [className]="'columns download'">
