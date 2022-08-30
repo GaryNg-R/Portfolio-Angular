@@ -45,10 +45,10 @@ export interface Work {
   company: string;
   title: string;
   years: string;
-  work: WorkDescription[];
+  descriptions: Descriptions[];
 }
 
-export interface WorkDescription {
+export interface Descriptions {
   description: string;
 }
 

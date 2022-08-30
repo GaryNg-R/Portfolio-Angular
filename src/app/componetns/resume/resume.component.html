@@ -1,4 +1,4 @@
-<section id="resume">
+<section id="resume" *ngIf="resume">
     <div [className]="'row education'">
         <div [className]="'three columns header-col'">
             <h1>
@@ -32,21 +32,16 @@
 
             <div *ngFor="let work of resume.resume.work">
                 <h3>{{work['company']}}</h3>
-                <p className="info">
+                <p [className]="'info'">
                     {{work['title']}}
-                    <span>&bull;</span> <em className="date">{{work['years']}}</em>
+                    <span>&bull;</span> <em [className]="'date'">{{work['years']}}</em>
                 </p>
-                <p> description</p>
+
+                <ul>
+                    <li *ngFor="let desc of work['descriptions']">{{desc.description}}</li>
+                </ul>
+
             </div>
-            <!-- <div>
-                <h3>{{resume.resume.work[0]['company']}}</h3>
-                <p className="info">
-                    {{resume.resume.work[0]['title']}}
-                    <span>&bull;</span> <em className="date">{{resume.resume.work[0]['years']}}</em>
-                </p>
-                <p> description</p>
-            
-            </div> -->
         </div>
     </div>
 

@@ -91,3 +91,7 @@
     line-height: 42px;
     border-radius: 3px 0 0 3px;
  }
+
+ ul {
+   list-style-type: disc;
+}
