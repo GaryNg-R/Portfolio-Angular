@@ -141,14 +141,14 @@ jQuery(document).ready(function ($) {
     //contactEmail
     var data = {
       name: contactName + " " + contactEmail,
-      source: "ngff101@gmail.com",
+      source: "siuhungng01@gmail.com",
       subject: contactSubject,
-      destination: "ngff101@gmail.com",
+      destination: "siuhungng01@gmail.com",
       message: contactMessage,
     };
     $.ajax({
       type: "POST",
-      url: "https://psnfkmnz68.execute-api.us-east-1.amazonaws.com/dev/send-email",
+      url: "https://insideinit-js-need-new-lambda/send-email",
       data: data,
       success: function (msg) {
         // Message was sent
