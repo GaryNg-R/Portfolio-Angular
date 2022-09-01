@@ -1,5 +1,5 @@
-<section id="about" *ngIf="resume">
-    <div [className]="'row'">
+<section id="about">
+    <div [className]="'row'" *ngIf="resume">
         <div [className]="'three columns'">
             <img [className]="'profile-pic'" src="../../../assets/images/profilepic.jpg" alt=" Gary Ng Pic" />
         </div>
@@ -14,7 +14,7 @@
                     <p [className]="'address'">
                         <span>{{resume.main.name}}</span>
                         <br />
-                        {{resume.main.address['city']}}
+                        {{resume.main.address['city']}},
                         {{resume.main.address['state']}}
                         {{resume.main.address['zip']}}
                         <br />

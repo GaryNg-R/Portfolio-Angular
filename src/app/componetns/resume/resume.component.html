@@ -1,5 +1,5 @@
-<section id="resume" *ngIf="resume">
-    <div [className]="'row education'">
+<section id="resume">
+    <div [className]="'row education'" *ngIf="resume">
         <div [className]="'three columns header-col'">
             <h1>
                 <span>Education</span>
@@ -28,7 +28,7 @@
             </h1>
         </div>
 
-        <div [className]="'nine columns main-col'">
+        <div [className]="'nine columns main-col'" *ngIf="resume">
 
             <div *ngFor="let work of resume.resume.work">
                 <h3>{{work['company']}}</h3>
@@ -52,11 +52,16 @@
             </h1>
         </div>
 
-        <div [className]="'nine columns main-col'">
-            <p>Skillmessage</p>
+        <div [className]="'nine columns main-col'" *ngIf="resume">
+            <p>{{resume.resume.skillmessage}}</p>
 
             <div [className]="'bars'">
-                <ul [className]="'skills'">skills</ul>
+                <ul [className]="'skills'">
+                    <li *ngFor="let skill of resume.resume.skills">
+                        <span [className]="'bar-expand'" [ngStyle]="{width: skill.level}"></span>
+                        <em>{{skill.name}}</em>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>

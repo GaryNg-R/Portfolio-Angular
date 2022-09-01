@@ -7,7 +7,7 @@
         </div>
 
         <div [className]="'ten columns'">
-            <p [className]="'lead'">message</p>
+            <p *ngIf="resume" [className]="'lead'">{{resume.main.contactMessage}}</p>
         </div>
     </div>
 
@@ -61,14 +61,16 @@
         </div>
 
         <aside [className]="'four columns footer-widgets'">
-            <div [className]="'widget widget_contact'">
+            <div [className]="'widget widget_contact'" *ngIf="resume">
                 <h4>Address</h4>
                 <p [className]="'address'">
-                    name
+                    {{resume.main.name}}
                     <br />
-                    email
+                    {{resume.main.email}}
                     <br />
-                    address
+                    {{resume.main.address['city']}},
+                    {{resume.main.address['state']}}
+                    {{resume.main.address['zip']}}
                     <br />
                 </p>
             </div>
