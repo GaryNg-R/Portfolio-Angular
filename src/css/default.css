@@ -803,5 +803,8 @@ properly.
 }
 
 
+html {
+   scroll-behavior: smooth;
+ }
 
-
+ .opaque { background-color: #333; }
