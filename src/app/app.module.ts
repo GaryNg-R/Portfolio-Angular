@@ -9,6 +9,12 @@ import { ResumeComponent } from './componetns/resume/resume.component';
 import { HearderComponent } from './componetns/hearder/hearder.component';
 import { HttpClientModule } from '@angular/common/http';
 import * as $ from 'jquery';
+import { Routes, RouterModule } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'header', component: HearderComponent },
+  { path: 'about', component: AboutComponent },
+];
 
 @NgModule({
   declarations: [
@@ -19,7 +25,11 @@ import * as $ from 'jquery';
     ResumeComponent,
     HearderComponent,
   ],
-  imports: [BrowserModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes, { anchorScrolling: 'enabled' }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
