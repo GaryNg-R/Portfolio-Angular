@@ -2,6 +2,7 @@ import { Test } from './../../model/test';
 import { Component, OnInit } from '@angular/core';
 import { Resume } from 'src/app/model/resume';
 import { ResumeApiService } from 'src/app/services/resume-api.service';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hearder',
