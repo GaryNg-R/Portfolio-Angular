@@ -1,21 +1,25 @@
 <header id="home">
-    <nav id="nav-wrap">
+    <nav id="nav-wrap" onscroll="onWindowScroll()">
 
         <a [className]="'mobile-btn'" href="#nav-wrap" title="Show navigation">Show navigation</a>
         <a [className]="'mobile-btn'" href="#home" title="Hide navigation">Hide navigation</a>
 
 
         <ul id="nav" [className]="'nav'">
-            <a [className]="'smoothscroll'" [routerLink]="['/']" fragment="home"
-                [routerLinkActive]="['current']">Home</a>
-            <a [className]="'smoothscroll'" [routerLink]="['/']" fragment="about"
-                [routerLinkActive]="['current']">About</a>
 
-            <!-- 
-            <li [className]="'current'"><a [className]="'smoothscroll'" href="#home">Home</a></li> 
-            <li><a [className]="'smoothscroll'" href="#about">About</a></li>
-            <li><a [className]="'smoothscroll'" href="#resume">Resume</a></li>
-            <li><a [className]="'smoothscroll'" href="#contact">Contact</a></li>  -->
+            <li [routerLink]="['/home']" fragment="home" [routerLinkActive]="['current']">
+                <a> Home</a>
+            </li>
+            <li [routerLink]="['/about']" fragment="about" [routerLinkActive]="['current']">
+                <a>About</a>
+            </li>
+            <li [routerLink]="['/resume']" fragment="resume" [routerLinkActive]="['current']">
+                <a>Resume</a>
+            </li>
+            <li [routerLink]="['/contact']" fragment="contact" [routerLinkActive]="['current']">
+                <a>Contact</a>
+            </li>
+
         </ul>
     </nav>
 
@@ -28,10 +32,15 @@
 
             </ul>
         </div>
+
+
+        <p className="scrolldown">
+            <a [routerLink]="['/about']" fragment="about" [routerLinkActive]="['current']">
+                <fa-icon [icon]="faCircle" size="3x" style="color:white"></fa-icon>
+            </a>
+        </p>
     </div>
-    <p className="scrolldown">
-        <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
-    </p>
+
 
 </header>
 
