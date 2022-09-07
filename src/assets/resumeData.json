@@ -4,7 +4,7 @@
     "occupation":"Software Engineer",
     "description":"I'm a Indianapolis/Remote based Full Stack Engineer with over 5 years of experience who loves building things and solving problems. My expertise is building backend services with REST or Lambda.",
     "image":"profilepic.jpg",
-    "bio":"When I’m not coding, you can usually find me playing table tennis, gaming, cooking, working with cars or taking pictures. My current goal in Table Tennis is to reach a rating of over 1800.",
+    "bio":"When I'm not coding, you can usually find me playing table tennis, gaming, cooking, working with cars or taking pictures. My current goal in Table Tennis is to reach a rating of over 1800.",
     "contactmessage":"Feel free to leave me a message.",
     "email": "siuhungng01@gmail.com",
     "address":{
@@ -18,12 +18,12 @@
       {
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/siu-hung-gary-ng-44a54a153/",
-        "className":"fa fa-linkedin"
+        "className":"faLinkedin"
       },
       {
         "name":"github",
         "url":"https://github.com/GaryNg-R",
-        "className":"fa fa-github"
+        "className":"faGithub"
       }
     ]
   },
