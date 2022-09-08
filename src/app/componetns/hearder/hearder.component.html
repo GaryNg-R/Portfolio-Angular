@@ -30,10 +30,10 @@
             <ul [className]="'social'">
                 <li *ngFor="let soc of resume.main.social">
                     <a herf="" *ngIf="soc.className == 'faGithub';else linkedin_icon">
-                        <fa-icon [icon]="faGithub" style="color:white"> </fa-icon>
+                        <fa-icon [icon]="faGithub"> </fa-icon>
                     </a>
                     <ng-template #linkedin_icon>
-                        <fa-icon [icon]="faLinkedin" style="color:white"> </fa-icon>
+                        <fa-icon [icon]="faLinkedin"> </fa-icon>
                     </ng-template>
 
                 </li>
@@ -43,7 +43,7 @@
 
         <p>
             <a [routerLink]="['/about']" fragment="about" [routerLinkActive]="['current']">
-                <fa-icon [icon]="faCircle" size="3x" style="color:white"></fa-icon>
+                <fa-icon [icon]="faCircle" size="3x"></fa-icon>
             </a>
         </p>
     </div>

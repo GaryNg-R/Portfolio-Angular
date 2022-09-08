@@ -166,3 +166,7 @@ ul#nav li.current a { color: #F06000; }
 li{
    cursor: default;
 }
+
+fa-icon{
+   color:white;
+}
