@@ -29,13 +29,16 @@
             <hr />
             <ul [className]="'social'">
                 <li *ngFor="let soc of resume.main.social">
-                    <a herf="" *ngIf="soc.className == 'faGithub';else linkedin_icon">
-                        <fa-icon [icon]="faGithub"> </fa-icon>
-                    </a>
+                    <ng-container *ngIf="soc.className == 'faGithub';else linkedin_icon">
+                        <a [href]="soc.url">
+                            <fa-icon [icon]=faGithub> </fa-icon>
+                        </a>
+                    </ng-container>
                     <ng-template #linkedin_icon>
-                        <fa-icon [icon]="faLinkedin"> </fa-icon>
+                        <a [href]="soc.url">
+                            <fa-icon [icon]="faLinkedin"> </fa-icon>
+                        </a>
                     </ng-template>
-
                 </li>
             </ul>
         </div>
