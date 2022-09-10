@@ -7,7 +7,7 @@ header {
     height: 800px;
     min-height: 500px;
     width: 100%;
-    background: #161415 url(../../../assets/images/header-background.jpeg) no-repeat top center;
+    background: #161415 no-repeat top center;
     background-size: cover !important;
      -webkit-background-size: cover !important;
     text-align: center;
@@ -169,4 +169,9 @@ li{
 
 fa-icon{
    color:white;
+}
+
+hr{
+   height: 2px;
+   background-color: white;
 }
